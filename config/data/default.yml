@@ -1,0 +1,5 @@
+checkout_page:
+  name: ~full_name
+  address: ~street_address
+  email: ~email_address
+  pay_type: ~randomize ['Purchase order', 'Credit card', 'Check']

@@ -4,6 +4,7 @@ require 'rspec-expectations'
 require 'page-object'
 require 'require_all'
 require 'fig_newton'
+require 'data_magic'
 
 require_all 'lib'
 
