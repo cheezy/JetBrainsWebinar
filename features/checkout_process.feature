@@ -8,3 +8,8 @@ Feature: Completing the checkout process
     When I attempt to checkout without a name
     Then I should see the error message "Name can't be blank"
 
+  Scenario: Address is required when checking out
+    Given I am on the puppy adoption site
+    When I attempt to checkout without an address
+    Then I should see the error message "Address can't be blank"
+

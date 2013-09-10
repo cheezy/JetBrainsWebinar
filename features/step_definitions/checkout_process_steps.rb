@@ -2,7 +2,7 @@ Given(/^I am on the puppy adoption site$/) do
   visit HomePage
 end
 
-When(/^I attempt to checkout without a (.+)$/) do |blank_field|
+When(/^I attempt to checkout without an? (.+)$/) do |blank_field|
   on(HomePage).select_puppy
   on(DetailsPage).add_to_cart
   on(ShoppingCartPage).proceed_to_checkout
