@@ -9,3 +9,11 @@ require 'data_magic'
 require_all 'lib'
 
 World(PageObject::PageFactory)
+
+PageObject::PageFactory.routes = {
+    :default => [[HomePage, :select_puppy],
+                 [DetailsPage, :add_to_cart],
+                 [ShoppingCartPage, :proceed_to_checkout],
+                 [CheckoutPage, :checkout]]
+}
+
