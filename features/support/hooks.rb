@@ -1,4 +1,4 @@
-require 'watir-webdriver'
+require 'watir'
 
 Before do
   @browser = Watir::Browser.new :firefox
